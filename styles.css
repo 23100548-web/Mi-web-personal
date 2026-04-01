@@ -1,0 +1,132 @@
+/* Reseteo y nueva tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Cambio de tipografía a una más geométrica y moderna */
+    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; 
+    background-color: #121212; 
+    padding: 20px;
+}
+
+/* Contenedores principales */
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e1e1e; 
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    /* Acento en color verde */
+    border-top: 4px solid #00e676; 
+}
+
+/* Tipografía de encabezados */
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #00e676; /* Subtítulo en verde */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+/* Textos generales y enlaces */
+p, li {
+    color: #b3b3b3;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #00e676; /* Enlaces en verde */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* --- Estilo para los "Chips" (Efecto Tech Verde) --- */
+.contenedor-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.chip {
+    background-color: transparent;
+    color: #00e676;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 1px solid #00e676;
+    transition: all 0.3s ease; 
+    cursor: default;
+}
+
+/* Efecto al pasar el mouse por los chips */
+.chip:hover {
+    background-color: #00e676;
+    color: #121212;
+    box-shadow: 0 0 10px rgba(0, 230, 118, 0.5); /* Resplandor verde */
+}
+
+/* --- Ajustes de las imágenes y videos --- */
+.multimedia-proyecto {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.video-proyecto {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8); 
+    border: 1px solid #333; 
+}
+
+/* Adaptación a pantallas más grandes (Responsive) */
+@media (min-width: 600px) {
+    body {
+        padding: 40px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    header, main, footer {
+        padding: 40px;
+    }
+}
